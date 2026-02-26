@@ -1,10 +1,15 @@
-text = str(input("Enter a string: "))
+print("Enter Marks Obtained in 4 Subjects:")
+math = int(input("math: "))
+science = int(input("science: "))
+english = int(input("english: "))
+hindi = int(input("hindi: "))
 
 
 
+sum = math + science + english + hindi
+print("The sum of maths,science,english,hindi is: ", sum)
 
-revtext = text[::-1]
-text = revtext
+perc = (sum / 400) *100
 
-print("Reverse of the string is:")
-print(text)
+print(end ="Percentage Marks: ")
+print(perc)
