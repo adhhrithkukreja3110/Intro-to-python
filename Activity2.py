@@ -1,21 +1,12 @@
 a = 10
-b = 12
-c = 12
+b = 10 
 
-print(a != b)
-print(b != c)
+print("a >> 1 = " , a >> 1)
 
-a = "python"
-b = "coding"
+print("b >> 1 = " , b >> 1)
+a = 5 
 
-if a != b :
-    print(a ,'and', b, 'are different .')
-a = 4
-b = 5
-if (a == 1) != (b == 5):
-    print("hello")
+b = -10
+print("a << 1 = " , a << 1)
 
-a = int(input("enter a number"))
-
-if a%2 != 0 :
-    print(a, "is not an even number")
+print("b << 1 = " , b << 1)

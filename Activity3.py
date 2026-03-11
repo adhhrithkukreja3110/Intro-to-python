@@ -1,19 +1,29 @@
-height = float(input("enter your height is cm"))
-weight = float(input("enter your weight is kg"))
-
-BMI = weight / (height/100)**2
-
-print(" your BMI is ", round(BMI,2))
-
-if BMI <= 18.4:
-    print("you are under weight")    
-elif  BMI <= 24.9:
-    print("you are healthy")
-elif  BMI <= 29.9:
-    print("you are over weight ")
-elif BMI <= 34.9:
-    print("you are severly over weight")
-elif BMI <= 39.9:
-    print("you are obese ")
+print("Enter Marks of 5 Subjects :")
+markOne = int(input())
+markTwo = int(input())
+markThree = int(input())
+markFour = int(input())
+markFive = int(input())
+tot = markOne + markTwo + markThree + markFour + markFive
+avg = tot / 5
+if avg >= 91 and avg <= 100:
+    print("Grade A1")
+elif avg >= 81 and avg < 91:
+    print("Grade A2")
+elif avg >= 71 and avg < 81:
+    print("Grade B1")
+elif avg >= 61 and avg < 71:
+    print("Grade B2")
+elif avg >= 51 and avg < 61:
+    print("Grade C1")
+elif avg >= 41 and avg < 51:
+    print("Grade C2")
+elif avg >= 33 and avg < 41:
+    print("Grade D")
+elif avg >= 21 and avg < 33:
+    print("Grade E1")
+elif avg >= 0 and avg < 21:
+    print("Grade E2")
 else:
-    print("you are  severly obese ")
+    print("Invalid Input")
+    

@@ -1,24 +1,19 @@
-a = 10
-b = 12
-c = 0
-
-if a and b and c:
-    print("All The Numbers have boolean value as true ")
+x = 5
+if (type(x) is int):
+    print("True")
 else:
-    print("atleast one has boolean value as false")
+    print("False")
 
+x = 5.5
+if (type(x) is not float )  :
+    print("True")
+else:    
+    print("False")
 
-
-a = 10 
-b = -10
-c = 0
-
-if a > 0 or b > 0:
-    print("either of the number is greater than 0 ")
-else:
-    print("No number is greater than 0")
-
-if b > 0 or c > 0:
-    print("either of the number is greater than 0")
-else:
-    print("no number is greater than 0")
+x = 20
+y = 20
+if (x is y) :
+    print("x & y same identity")
+y = 30
+if (x is not y) :
+    print("x & y different identity")
