@@ -1,12 +1,9 @@
-a = 10
-b = 10 
+print("Enter a Number (Numerator): ")
+numn = int(input())
+print("Enter a Number (Denominator): ")
+numd = int(input())
 
-print("a >> 1 = " , a >> 1)
-
-print("b >> 1 = " , b >> 1)
-a = 5 
-
-b = -10
-print("a << 1 = " , a << 1)
-
-print("b << 1 = " , b << 1)
+if numn % numd == 0:
+    print("\n" +str (numn) + " is divisible by " + str(numd))
+else:
+    print("\n" +str (numn) + " is not divisible by " + str(numd))
