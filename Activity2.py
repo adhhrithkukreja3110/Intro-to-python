@@ -1,9 +1,22 @@
-print("Enter a Number (Numerator): ")
-numn = int(input())
-print("Enter a Number (Denominator): ")
-numd = int(input())
+units = int(input("Enter the number of units you have consumed: "))
 
-if numn % numd == 0:
-    print("\n" +str (numn) + " is divisible by " + str(numd))
+if(units < 50):
+    amount = units * 2.60
+    surcharge = 25
+elif(units <= 100):
+    amount = 130 + ((units - 50)*3.25)
+    surcharge = 35
+
+elif(units <= 200):
+    amount = 130 + 162.5 + ((units - 100)*5.26)
+    surcharge = 45
+
+
+
+
 else:
-    print("\n" +str (numn) + " is not divisible by " + str(numd))
+    amount = 130 + 162.5 + 526 + ((units - 200)*7.75)
+    surcharge = 75
+
+total = amount + surcharge
+print("\n Electricity Bill = %.2f" % total)
